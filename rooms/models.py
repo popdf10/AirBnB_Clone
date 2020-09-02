@@ -1,7 +1,6 @@
 from django.db import models
 from django_countries.fields import CountryField
 from core import models as core_models
-from users import models as user_models
 
 
 class AbstractItem(core_models.TimeStampedModel):
@@ -80,7 +79,7 @@ class Room(core_models.TimeStampedModel):
     instant_book = models.BooleanField(default=False)
     host = models.ForeignKey("users.User", on_delete=models.CASCADE)
     room_type = models.ForeignKey("RoomType", on_delete=models.SET_NULL, null=True)
-    amenity = models.ManyToManyField("Amenity", blank=True)
+    amenities = models.ManyToManyField("Amenity", blank=True)
     facilities = models.ManyToManyField("Facility", blank=True)
     house_rules = models.ManyToManyField("HouseRule", blank=True)
 
