@@ -1,8 +1,9 @@
 {
-  "python.pythonPath": "/home/yunil/.local/share/virtualenvs/AirBnB_Clone-Zpv2BoUa/bin/python",
+  "python.pythonPath": "/home/yunil/.local/share/virtualenvs/AirBnB_Clone-xW_cW7Re/bin/python",
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
   "python.formatting.provider": "black",
-  "python.linting.flake8Args": ["--max-line-length=91"]
+  "python.linting.flake8Args": ["--max-line-length=91"],
+  "prettier.disableLanguages": ["html"]
 }
