@@ -5,7 +5,9 @@
 {%block content %} 
 
     {% for room in rooms %}
-        <h1>{{room.name}}</h1>
+    <a href="{% url "rooms:detail" room.pk %}">
+        <h3>{{room.name}}</h3>
+    </a>
     {% endfor %}
     <h5>
     
