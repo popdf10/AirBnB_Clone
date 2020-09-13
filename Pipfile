@@ -13,6 +13,9 @@ pillow = "*"
 django-countries = "*"
 django-seed = "*"
 django-dotenv = "*"
+flask = "*"
+flake8 = "*"
+django-smtp-ssl = "*"
 
 [requires]
 python_version = "3.8"
