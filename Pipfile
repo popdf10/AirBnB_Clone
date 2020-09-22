@@ -16,6 +16,7 @@ django-dotenv = "*"
 flask = "*"
 flake8 = "*"
 django-smtp-ssl = "*"
+django-mailgun = "*"
 
 [requires]
 python_version = "3.8"
